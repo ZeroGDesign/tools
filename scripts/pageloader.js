@@ -14,7 +14,7 @@ function fetchAndInsert(url, containerId) {
 const baseURL = window.location.origin;
 
 // Fetch and insert header
-fetchAndInsert(`${baseURL}/_includes/header.html`, 'header-container');
+fetchAndInsert(`${baseURL}/includes/header.html`, 'header-container');
 
 // Get the current page's path and file name
 const currentPagePath = window.location.pathname;
@@ -24,4 +24,4 @@ const currentPage = currentPagePath.split('/').pop();
 fetchAndInsert(`${baseURL}${currentPage}`, 'page-content-container');
 
 // Fetch and insert footer
-fetchAndInsert(`${baseURL}/_includes/footer.html`, 'footer-container');
+fetchAndInsert(`${baseURL}/includes/footer.html`, 'footer-container');
